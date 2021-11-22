@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    {{>header}}
+    <div class="container">
+      <div class="container-content">
+        {{#if message}}
+          <h3 class="text-center">{{message}}</h3>
+        {{/if}}
+        {{#each blogs}}
+          <div class="single-blog">
+            <div class="content">
+              <h2 class="title">{{title}}</h2>
+              <h3 class="body">{{body}}</h3>
+            </div>
+            <div class="bottom">
+              <a href="/blog/edit/{{id}}"><button
+                  class="btn btn-left"
+                >Edit</button></a>
+              <a href="/blog/remove/{{id}}"><button
+                  class="btn btn-left"
+                >Delete</button></a>
+              <a href="/blog/view/{{id}}"><button class="btn btn-right">Read
+                  more</button></a>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+    {{>footer}}
+  </body>
+</html>

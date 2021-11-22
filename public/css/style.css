@@ -1,0 +1,153 @@
+* {
+  font-family: calibri;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 2px;
+}
+
+.container-nav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.container-nav .nav-right a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.container-nav .nav-left a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.text-center {
+  margin: 10% auto;
+  width: 30%;
+}
+
+.form-center {
+  border: 2px;
+  border-radius: 4px;
+  padding: 1px;
+  margin: 10 auto;
+}
+
+.btn {
+  border: 2px solid #0e1428;
+  font-size: large;
+  padding: 0.5%;
+  border-radius: 4px;
+  background: transparent;
+  color: #0e1428;
+  cursor: pointer;
+}
+.btn-right {
+  float: right;
+}
+.btn:hover {
+  background-color: #0e1428;
+  color: white;
+  cursor: pointer;
+}
+
+.single-blog {
+  background-color: #3581b860;
+  border: 2px solid #3581b8;
+  padding: 0px 1px 8px 8px;
+  margin: 0.2%;
+  border-radius: 12px;
+  display: inline-block;
+}
+
+.single-blog .content {
+  min-width: 360px;
+  max-width: 360px;
+  min-height: 200px;
+  max-height: 200px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.single-blog .bottom {
+  margin: 2%;
+}
+
+.single-blog .title,
+.container-content .title,
+.container-about-page .title {
+  font-style: italic;
+  font-size: 30px;
+  color: #222e50;
+}
+
+.single-blog .body,
+.container-content .body,
+.container-about-page .body {
+  color: #565857;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.read-more {
+  float: right;
+  color: #444;
+  background: white;
+  border: 1px solid #444;
+  padding: 4px 10px;
+  transition: all 1s;
+}
+
+.container .container-content {
+  margin: 1%;
+  background-color: #e5fcf5;
+  border: 2px solid #3581b8;
+  padding: 1%;
+  color: #0e1428;
+  border-radius: 6px;
+}
+
+.container .expanded {
+  min-height: 1000px;
+}
+
+.container-about-page {
+  margin: 2%;
+  min-height: 200px;
+  background-color: #e5fcf5;
+  border: 2px solid #3581b8;
+  padding: 1%;
+  color: #0e1428;
+  border-radius: 6px;
+}
+
+.container .container-content .container-form {
+  width: 98%;
+  margin: 2%;
+  min-height: 200px;
+}
+.container .container-content .container-form > * {
+  width: 96%;
+  padding: 4px;
+  margin: 1%;
+  font-size: large;
+  border-radius: 4px;
+}
+.footer {
+  padding: 1%;
+}
+.footer-content {
+  float: right;
+}
+.text-danger {
+  color: red;
+}

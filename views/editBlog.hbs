@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    {{>header}}
+    <div class="container">
+      <div class="container-content">
+        <h2>Update your Blog</h2>
+        <form
+          class="container-form"
+          enctype="application/x-www-form-urlencoded"
+          action="/blog/edit/{{blog.id}}"
+          method="post"
+        >
+          <input
+            type="text"
+            name="title"
+            placeholder="Enter title here"
+            id=""
+            value="{{blog.title}}"
+          />
+          <input type="hidden" name="id" value="{{blog.id}}" />
+          <textarea
+            name="body"
+            placeholder="Enter Content here"
+            id=""
+            cols="30"
+            rows="20"
+          >{{blog.body}}
+          </textarea>
+          <button type="submit" class="btn btn-left">Update</button>
+        </form>
+      </div>
+    </div>
+{{>footer}}
+  </body>
+</html>
